@@ -6,10 +6,12 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+import nltk
+
 from nltk.corpus import stopwords
 
-
-
+nltk.download('stopwords')
+nltk.download('stopwords')
 st.sidebar.title("whatsapp chat analyzer")
 Uploaded_file = st.sidebar.file_uploader("choose a file")
 if Uploaded_file is not None:
